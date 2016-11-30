@@ -1,31 +1,49 @@
-/* Gewoon een voorsmaakje van wat je met SASS kan doen */
-$font-stack:    Helvetica, sans-serif;
-$background-color: #f4f4f7;
-/* Je kan zien hoe je die variabelen hieronder in de body gebruikt */
-
-body{
-  font-family: $font-stack;
-  text-align: center;
-  padding: 50px 20px 0;
-  background: $background-color;
-  color: #444;
-  margin: 0;
-  width: 80%;
-  margin: 25px auto;
+body {
+      padding: 25px;
+      font-family: helvetica, sans-serif;
 }
 
-h1{
-  font-size: 65px;
-  line-height: 1.2em;
-  border-bottom: #CCC solid 1px;
-  padding: 20px 0;
+.pure-g {
+      border: 5px solid orange;
+      margin-bottom: 25px;
 }
 
-h3, p{
-  margin-top: 25px;
-  font-weight: 300;
+.pure-u-1 {
+      box-sizing: border-box;
+      border: 5px solid cadetblue;
+      padding: 25px;
+      text-align: center;
 }
 
-h3 {
-  font-size: 125%;
+h1 {
+      font-size: 1.2em;
+      font-weight: 900;
+}
+
+h2 {
+      font-size: 1.1em;
+      font-weight: 900;
+      margin-bottom: 25px;
+}
+
+p {
+      margin-bottom: 25px;
+      text-align: left;
+      line-height: 1.6em;
+}
+
+ul {
+      list-style-type: none;
+      padding: 0;
+}
+
+@media (max-width: 48em) {
+      li a {
+            color: red;
+      }
+
+      li {
+            display: inline;
+            margin-right: 10px;
+      }
 }
